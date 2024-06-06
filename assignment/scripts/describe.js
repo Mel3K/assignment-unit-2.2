@@ -7,7 +7,7 @@
 
 
 // 0. WRITE YOUR DESCRIPTION HERE
-// //EXAMPLE. We make a variable called number and set it to 1 as a number.
+//EXAMPLE. We make a variable called number and set it to 1 as a number.
 // Then we increment the number variable. Number is now 2.
 // We check if number is greater than or equal to 2. 2 is equal to 2, so
 // we console.log 'yes'.
@@ -26,10 +26,10 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// create variable named "name"
+// we assigned it the value of the string "Dane"
+// we made conditional that if our variable name equal mary, we have the console print "hi mary"
+// and if it's not mary, it will console log "how do you do?"
 
 //CODE
 /*
@@ -45,10 +45,12 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// we made a varible "secret"
+// we made a varible "code" and assigned the value number 123
+// we made a conditional if code is equal to 123, then change secret to vaule of 'super', and change code to value
+// of code multiply 2
+// or if code is greater than 250, then change secret to "duper"
+// then console log will print the value of "secret"
 
 //CODE
 /*
@@ -70,10 +72,14 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+//we create varible isStudent and assign it to value of true, we create variable age and assign it the number 34
+// we create varible zip and assign it the number 55407
+// we make conditional that says if isStudent is equal to true and zip is greater than 8000, we will print
+// You're a student on the West Coast!
+// or if isStudent is false or age is less than 30, it will print 'What are your hobbies?'
+// or if isStudent is true, it will say 'Welcome to Prime!'
+//or if none of the conditionals are true, it will print  'How about the weather?'
+
 
 //CODE
 /*
@@ -128,7 +134,9 @@ if (number >= 2) {
 //4. We start with three variables -- colorOne is set to 'blue' and 
 // colorTwo is set to 'red', and mix is set to true. We check if mix is true 
 // -- it is, so we set colorOne and colorTwo to 'purple'
-
+/* //FIX  change code colorOne to 'blue' as per instructions
+change code colorTwo to 'red' as per instructions
+instruction says to set colorOne and colorTwo to purple, we will make colorTwo to 'purple' as well
 /*
 let colorOne = 'red';
 let colorTwo = 'blue';
@@ -137,11 +145,22 @@ let mix = true;
 if (mix === true) {
   colorOne = 'purple';
 }
-*/
+*/ //FIX
+
+let colorOne = 'blue';
+let colorTwo = 'red';
+let mix = true;
+
+if (mix === true) {
+  colorOne = 'purple', colorTwo = 'purple';
+}
+
 
 //5. We start with two variables -- temp is set to 40 and time is set to 4.
 // We check if temp is higher than 39 and if time is greater or equal to  4 
 // -- they are so we console.log 'throw away the food!'
+
+// || is incorrect, we will use &&
 
 /*
 let temp = 40;
@@ -150,11 +169,19 @@ const time = 4;
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
-*/
+*/ //FIX
+let temp = 40;
+const time = 4;
+
+if (temp > 39 && time >= 4) {
+  console.log('throw away the food!');
+}
 
 //6. We start with two variables -- age is set to 21 and minAge is set to 21.
 // We check if age is greater than or equal to minAge 
 // -- it is, so we console.log 'enter'.
+
+// the fix to match instructions is to  flip the console.logs.
 
 /*
 let age = 21;
@@ -166,4 +193,11 @@ if(minAge <= age) {
   console.log('enter');
 }
 */
+let age = 21;
+const minAge = 21;
 
+if( minAge <= age) {
+  console.log('enter');
+} else {
+  console.log('no entry');
+}
